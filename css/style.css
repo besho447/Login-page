@@ -1,0 +1,147 @@
+/* Start Golbal Rules */
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    --primary-color: #D885A3;
+    --secondary-color: #C0DBEA;
+    --raidus: 20px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, rgb(0 131 176 / 61%), rgb(219 0 158 / 54%));
+}
+.cursor {
+    cursor: pointer;
+}
+/* End Golbal Rules */
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 100px;
+    margin: 50px auto;
+    background-color: white;
+    width: 1300px;
+    height: 700px;
+    position: relative;
+    border-radius: var(--raidus);
+}
+.card::before {
+    content: "";
+    background-color: var(--secondary-color);
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border-radius: var(--raidus);
+}
+/* Start Titles */
+.card .login {
+    position: absolute;
+    top: 4%;
+    left: 7%;
+}
+.card .login h2 {
+    color: var(--primary-color);
+    font-size: 30px;
+}
+.card .login h1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+/* End Titles */
+.card .login label {
+    display: block;
+}
+.card .login input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 25px;
+    height: 30px;
+    width: 400px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondary-color);
+}
+.card .login .pass {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: end;
+    width: 400px;
+}
+.card .login .pass p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    display: contents;
+}
+.card .login .container {
+    text-align: center;
+}
+.card .login .container button {
+    background-color: var(--primary-color);
+    width: 150px;
+    text-align: center;
+    height: 40px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: var(--raidus);
+    position: relative;
+    padding-right: 40px;
+    text-transform: uppercase;
+}
+.card .login .container button::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+.card .login .container button::after {
+    content: "";
+    width: 12px;
+    height: 1.5px;
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    top: 16.5px;
+    transform: rotate(30deg);
+}
+.card .login .container p:first-of-type {
+    color: var(--secondary-color);
+}
+.card .login .bord-icon img {
+    width: 118px;
+    border: solid var(--secondary-color);
+    padding: 10px 39px;
+    border-radius: 24px;
+    
+}
+.card .login .bord-icon {
+    display: inline;
+    margin: 10px;
+}
+.card .login .container p:last-of-type span {
+    color: var(--primary-color);
+    padding-left: 20px;
+}
+/* Start Images */
+.card .images .img-1 {
+    position: absolute;
+    top: 9%;
+    width: 700px;
+    right: 3%;
+    z-index: 2;
+}
+.card .images .img-2 {
+    right: 5%;
+    position: absolute;
+    top: 25%;
+    width: 200px;
+}
+/* End Images */
